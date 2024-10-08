@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <form id="chat-form">
+            <input id="chat-input" type="text" placeholder="Type a message..." autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+        <button id="photo-btn">Send Photo</button>
+        <input id="photo-input" type="file" accept="image/*" style="display: none;">
+        <button id="video-btn">Send Video</button>
+        <input id="video-input" type="file" accept="video/*" style="display: none;">
+        <button id="audio-btn">Record Audio</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
